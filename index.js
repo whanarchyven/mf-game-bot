@@ -69,12 +69,12 @@ bot.on('message', async (msg) => {
     console.log(`Referral parameter: ${referralParam}`);
 
     // Отправляем сообщение с кнопкой для открытия WebView
-    bot.sendMessage(chatId, `Открыть веб-приложение`, {
+    bot.sendMessage(chatId, `Открыть приложение`, {
         reply_markup: {
             inline_keyboard: [
                 [
                     {
-                        text: `Открыть веб-приложение ${referralParam}`,
+                        text: `Открыть приложение`,
                         web_app: {url: webAppUrl}
                     }
                 ]
